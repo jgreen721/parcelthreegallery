@@ -1,0 +1,68 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 144rem;
+  min-height: 100vh;
+  border: 2px solid #000;
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+}
+
+.loading-overlay, .content-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#000, #fff);
+}
+
+h1 {
+  font-size: 7.2rem;
+}
+
+.overlaycontent:first-child {
+  transform: translateX(-10vw);
+}
+
+.overlaycontent:nth-child(3) {
+  transform: translateX(10vw);
+}
+
+@media (width <= 850px) {
+  .overlaycontent {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+  }
+}
+
+@media (width <= 450px) {
+  .overlaycontent {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 3.1rem;
+  }
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
